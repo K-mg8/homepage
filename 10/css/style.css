@@ -1,0 +1,54 @@
+@charset "utl-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: black;
+    background-position: 0px 200px;
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+
+.main h1{
+    font-family: "游明朝";
+    font-size: 30px;
+    line-height: 210px ;
+    color: white;
+    height: 40px;
+    margin-top: 8px;
+    text-decoration-line: underline;
+    text-align: center;    
+}
+
+.main p{
+    font-family: "游明朝";
+    color: white;
+    height: 30px;
+    margin-top: 80px;
+    text-align: center;    
+
+}
+
+
+img{
+    display:block;
+    max-width: 50vw;
+    max-height: 50vh;
+    margin: 0 37%;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    transform: scale()translateY(30px);
+}
+
+img:hover{
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+    transform: scale(0.9);
+    margin-right: 0;
+    margin-bottom: 0;
+}

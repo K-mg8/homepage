@@ -1,0 +1,107 @@
+@charset "utl-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    color: white;
+    font-family: "游明朝";
+    font-size: 20px;
+    height: 40px;
+    width: 100%;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    background-color: black;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+}
+
+.header-right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.header-right a{
+    line-height: 56px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.header-right a:hover{
+    color: rgb(209, 244, 255);
+    font-size: 16px;
+    padding: 0 5px;
+    margin-left: 5px;
+    transition: padding 0.5s ease-in-out;
+    letter-spacing: 0.5ex;
+}
+
+.header-right a::before{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: rgb(209, 244, 255);
+    opacity: 0.8;
+    transition: .3s;
+    -webkit-transform: translateX(-50%);
+    transform: all 0.3s ease-in-out;
+}
+
+.header-right a:hover::before{
+    width: 100%;
+}
+
+body{
+    background-color: black;
+}
+
+.modoru a{
+    line-height: 56px;
+    font-family: "游明朝";
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.modoru a:hover{
+    color: rgb(209, 244, 255);
+    font-size: 14px;
+    padding: 0 5px;
+    margin-left: 5px;
+    transition: padding 0.5s ease-in-out;
+    letter-spacing: 0.5ex;
+}
+
+.modoru a::before{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: rgb(209, 244, 255);
+    opacity: 0.8;
+    transition: .3s;
+    -webkit-transform: translateX(-50%);
+    transform: all 0.3s ease-in-out;
+}
+
+.modoru a:hover::before{
+    width: 100%;
+}

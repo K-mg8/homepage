@@ -1,0 +1,65 @@
+@charset "utl-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.sub{
+    width: 100%;
+    margin: 50px;
+    color: white;
+    font-family: "游明朝";
+}
+
+.main a{
+    text-decoration: none;
+}
+
+.kakusi{
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    transform: scale()translateY(30px);
+}
+
+.hover{
+    transition: all 0.5s ease-in-out;
+    height: 50px;
+}
+
+.hover:hover{
+    letter-spacing: 0.5em;
+}
+
+.hover:hover + .kakusi{
+    background-image: url(../gazou/hisigata.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 1;
+    text-align: center;
+    transform: scale(0.9);
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.kakusi:hover{
+    background-image: url(../gazou/hisigata.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 1;
+    text-align: center;
+    transform: scale(0.9);
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+
+a:hover{
+    color: rgb(209, 244, 255);
+    padding:  0 5px;
+    letter-spacing: 0.5em;
+    margin-left: 5px;
+    transform: padding 0.5s ease-in-out;
+}
